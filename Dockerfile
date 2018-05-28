@@ -18,5 +18,6 @@ RUN apt install -y lame
 RUN apt install -y ffmpeg
 RUN apt install -y normalize-audio
 RUN apt install -y glyrc
+RUN apt install -y cdda2wav
 
 #ENTRYPOINT ["abcde"]
