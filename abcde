@@ -2,4 +2,7 @@ docker run -it \
   --device=/dev/sr1:/dev/cdrom \
   -v $HOME/.abcde.conf:/root/.abcde.conf \
   -v $HOME/Rip:/root/Music docker-abcde-xenial \
-  abcde
+  abcde $@
+
+# notification to android device via https://github.com/mashlol/notify
+notify -t "abcde ist fertig"
